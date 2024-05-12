@@ -1,0 +1,945 @@
+@font-face{
+    font-family: amiri;
+    src: url("Amiri-Bold.ttf");
+}
+body{
+    margin: 0; 
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+html{
+    height: 100%;
+}
+/* header */
+.header{
+    width: 100%; 
+    height: 75px;
+    background-color: rgb(104, 179, 211);
+}
+.tit{
+    width: 200px; 
+    height: 60px;
+    text-align: center;
+    float: right;
+}
+.tit x{
+    font-size: 40px;
+    font-family: amiri;
+    color: white;
+    
+}
+.navbar{
+    width: 500px; 
+    height: 50px; 
+    text-align: center; 
+    float: left;
+    padding: 10px; 
+    margin-top: 10px;
+}
+.navbar a{
+    font-family: amiri;
+    padding: 12px;
+    color: rgb(22, 21, 21);
+    text-decoration: none;
+    font-size: 22px;
+}  
+.navbar a:hover{
+    color: white;
+}
+.active{
+    background-color: #04AA6D;
+}
+/* main */
+.main{
+    width: 100%; 
+    height: 400px;
+    background-color: rgb(113, 187, 219);
+    text-align: center; 
+    position: relative;
+}
+.main a{
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 30px;
+    width: 200px; 
+    height: 35px; 
+    border: 1px solid rgb(204, 130, 130);
+    padding: 10px;
+    margin: 10px; 
+    margin-top:30px ; 
+    border-radius: 30px;
+    background-color: rgb(241, 245, 244); 
+    color: black; 
+    text-align: center;
+    font-weight: bold;
+}
+.main a:hover{
+    background-color: lightblue;
+    color: white;
+}
+.intro{
+    width: 700px; 
+    height: 250px;
+    margin: auto; 
+    margin-top: 25px; 
+    font-size: 40px;
+    font-weight: bold; 
+    font-family: amiri; 
+    line-height: 60px;
+    padding: 10px; 
+}
+.intro x{
+    display: block;
+    float: right;
+}
+.intro x2{
+    display: block;
+    float: left;
+}
+.intro x3{
+    font-size: 35px; 
+}
+/* grades */
+.grades{
+    width: 90%; 
+    height: 200px;
+    margin: auto; 
+    margin-top: 25px; 
+    padding: 15px;
+    text-align: center;
+}
+.grades x{
+    font-size: 40px;
+    font-family: amiri;
+    color: rgb(87, 85, 85);
+}
+.grades a{
+    text-decoration: none; 
+    float: right; 
+    font-size: 25px;
+    width: 270px; 
+    height: 30px; 
+    border: 1px solid black;
+    padding: 15px;
+    margin: 20px; 
+    margin-top:40px; 
+    border-radius: 30px;
+    background-color: rgb(113, 187, 219); 
+    color: whitesmoke;
+}
+.grades a:hover{
+    opacity: 20; 
+    box-shadow: 5px 5px 10px rgb(192, 178, 178);
+}
+/* footer */
+.footer{
+    width: 99.9%; 
+    height: auto;
+    background-color: rgb(176, 187, 192);
+    margin-top: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+.footer x{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.icons{
+    width: 22%;
+    height: 50px;
+    margin: auto;
+    padding: 10px;
+}
+.icons img{
+    float: left;
+    margin-left: 15px;
+}
+/* login form */
+#login{
+    width: 600px; 
+    height: 500px; 
+    padding: 25px;
+    margin: auto; 
+    border: 1px solid white;
+    background-color:rgb(255, 255, 255); 
+    opacity: 10; 
+    box-shadow: 5px 5px 10px 5px white;
+    text-align: right; 
+    font-size: 25px;
+    font-weight: bold; 
+    border-radius: 20px;
+}
+#login input[type=text],#login input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;  
+    text-align: right;
+    font-size: 20px;
+}  
+button{
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+}  
+button:hover{
+    opacity: 0.8;
+}
+.cancelbt{
+    width: auto; 
+    float: left;
+    padding: 10px 18px; 
+    background-color: #f44336; color: white;
+    text-decoration: none;
+}  
+.image{
+    text-align: center;
+    margin: 24px 0 12px 0;
+}  
+img.user{
+    width: 40%;
+    border-radius: 50%;
+}
+.cancel{
+    padding: 16px;
+}
+span.psw{
+    float: left;
+    padding-top: 16px;
+}
+/* new student form*/
+#newst{
+    width: 600px; 
+    height: 600px; 
+    padding: 25px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: white;
+    opacity: 20; 
+    box-shadow:5px 5px 10px 5px white ;
+    text-align: right; 
+    font-size: 25px;
+    font-weight: bold; 
+    line-height: 40px;
+}
+.txt{
+    width: 100%; 
+    height: 35px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;  
+    text-align: left;
+    font-size: 20px;
+}
+.signbtn{
+    width: 250px; 
+    height: 50px; 
+    padding: 10px;
+    font-size: 25px; 
+    margin-top: 30px; 
+    margin-right: 20px;
+    border-radius: 25px; 
+    background-color: rgb(73, 148, 113);
+    color: white; 
+    float: right;
+}
+#newst .cancelbtn{
+    width: 240px; 
+    height: 28px; 
+    padding: 10px; 
+    border: 2px solid black;
+    font-size: 25px; 
+    margin-top: 30px; 
+    margin-right: 60px;
+    border-radius: 25px; 
+    background-color: brown; 
+    text-align: center;
+    color: white; 
+    float: right; 
+    text-decoration: none; 
+    line-height: 30px;
+}
+.stxt{
+    width: 200px; 
+    height: auto;
+    font-size: 20px;
+    padding: 5px;
+    text-align: right;
+    direction: rtl;
+    border-radius: 10px;
+    background-color: rgb(228, 220, 220);
+}
+/* services */
+.services{
+    width: 70%; 
+    height: 700px; 
+    margin: auto; 
+    text-align: center; 
+    padding: 10px;
+}
+.services x{
+    font-size: 50px;
+    font-family: amiri;
+    color: rgb(87, 85, 85);
+}
+.service{
+    width: 430px; 
+    height: 220px;
+    float: right;
+    margin: auto; 
+    margin: 20px; 
+    margin-right: 40px;
+    background-color: whitesmoke; 
+    position: relative;
+    border-radius: 30px; 
+    padding: 10px;
+}
+.service img{
+    position: absolute; top: 10px; right: 170px;
+}
+.service x{
+    font-size: 33px; 
+    font-family: amiri;
+    font-weight: bold; 
+    color: black;
+}
+.service x2{
+    font-size: 22px;
+}
+/* about us */
+.know{
+    width: 700px; 
+    height: 400px;
+    background-color: whitesmoke; 
+    margin: auto;
+    padding: 20px; 
+    font-size: 25px; 
+    text-align: right;
+}
+.know x{
+    font-size: 50px;
+    font-family: amiri;
+    color:
+     rgb(87, 85, 85);
+}
+/* contact us */
+#contact{
+    width: 700px; 
+    height: 600px;
+    margin: auto; 
+    text-align: right; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color:whitesmoke;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgb(255, 244, 244);
+    line-height: 45px;
+}
+#contact x{
+    font-size: 40px; 
+    font-family: amiri; 
+    color: steelblue;
+}
+#contact x2{
+    font-size: 25px; 
+    color: steelblue;
+}
+#contact label{
+    font-size: 25px; 
+    font-weight: bold;
+}
+.txt2{
+    width: 90%; 
+    height: 35px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;  
+    text-align: right;
+    font-size: 20px;
+}
+#contact img{
+    float: right;
+}
+textarea{
+    width: 620px; 
+    height: 100px;
+    margin-right: 10px; 
+    padding: 10px;
+    text-align: right; 
+    font-size: 20px;
+}
+.sendbtn{
+    width: 250px; 
+    height: 45px;
+    font-size: 35px;
+    margin-top: 20px; 
+    margin-right: 220px;
+    border-radius: 30px;
+}
+.sendbtn:hover{
+    color: white;
+    background-color: rgb(187, 120, 120);
+}
+/* choices */
+.choices{
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+}
+.choice{
+    width: 350px;
+    height: 180px;
+    background-color: whitesmoke;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 30px;
+    font-family: amiri;
+    transition: all 0.3s ease;
+}
+.choice1{
+    width: 350px;
+    height: 180px;
+    background-color: whitesmoke;
+    display: inline-block;
+    margin: 25px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 30px;
+    font-family: amiri;
+    transition: all 0.3s ease;
+}
+.choice a,.choice1 a{
+    text-decoration: none;
+    color: black;
+}
+.choice:hover ,.choice1:hover{
+    transform: scale(1.2);
+}
+/* payment form */
+#payment{
+    width: 550px; 
+    height: auto; 
+    padding: 25px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: rgb(255, 250, 250);
+    opacity: 20; 
+    box-shadow:5px 5px 10px 5px white ;
+    text-align: right; 
+    font-size: 25px;
+    font-weight: bold; 
+    line-height: 40px;
+    background-color:whitesmoke;
+}
+#payment x{
+    font-size: 40px;
+    font-family: amiri;
+    /* text-align: center; */
+}
+.txt11{
+    width: 500px;
+    height: 30px;
+    margin: 15px;
+    padding: 5px;
+    font-size: 20px;
+}
+.txt22{
+    width: 200px;
+    height: 35px;
+    margin: 15px;
+    padding: 2px;
+    font-size: 20px;
+}
+.confirmbtn{
+    width: 200px;
+    height: auto;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-right: 30px;
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    font-size: 25px; 
+    background-color: rgb(73, 148, 113);
+    font-weight: bold;
+}   
+#payment .cancelbtn{
+    width: 200px; 
+    height: auto; 
+    padding: 10px; 
+    border: 2px solid black;
+    font-size: 25px; 
+    margin-top: 30px; 
+    margin-right: 60px;
+    border-radius: 10px; 
+    background-color: brown; 
+    text-align: center;
+    color: white; 
+    text-decoration: none; 
+    line-height: 30px;
+    display: inline-block;
+}
+/* admin header */
+.navbar2{
+    width: 500px; 
+    height: 50px; 
+    text-align: center; 
+    float: left;
+    padding: 10px; 
+    margin-top: 10px;
+}
+.navbar2 a{
+    font-family: amiri;
+    padding: 12px;
+    color: rgb(22, 21, 21);
+    text-decoration: none;
+    font-size: 22px;
+}  
+.navbar2 a:hover{
+    color: white;
+}
+.navbar2 img{
+    float: left;
+}
+/* gradefour form */
+#gradefour{
+    width: 800;
+    height: auto;
+    text-align: right;
+    padding: 25px;
+    font-size: 25px;
+    background-color: whitesmoke;
+    line-height: 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    display: block;
+    float: right;
+}
+#gradefour x{
+    font-size: 40px;
+    font-family: amiri;
+}
+#gradefour img{
+    float: right;
+    margin-left: 10px;
+}
+.txxt{
+    width: 360px;
+    height: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+    text-align: right;
+    float: left;
+}
+.ftxt{
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    float: left;
+    /* margin-top: 5px; */
+}
+.addbtn{
+    width: 150px;
+    height: 45px;
+    background-color:teal;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-right: 300px;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+}
+/* gradeive form */
+#gradefive{
+    width: 800;
+    height: auto;
+    text-align: right;
+    padding: 25px;
+    font-size: 25px;
+    background-color: whitesmoke;
+    line-height: 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    float: right;
+}
+#gradefive x{
+    font-size: 40px;
+    font-family: amiri;
+}
+#gradefive img{
+    float: right;
+    margin-left: 10px;
+}
+/* gradesix form */
+#gradesex{
+    width: 800;
+    height: auto;
+    text-align: right;
+    padding: 25px;
+    font-size: 25px;
+    background-color: whitesmoke;
+    line-height: 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    float: right;
+}
+#gradesex x{
+    font-size: 40px;
+    font-family: amiri;
+}
+#gradesex img{
+    float: right;
+    margin-left: 10px;
+}
+/* grammer */
+#grammer{
+    width: 600;
+    height: auto;
+    text-align: right;
+    padding: 25px;
+    font-size: 25px;
+    background-color: whitesmoke;
+    line-height: 35px;
+    border-radius: 25px;
+    margin-top: 150px;
+    margin-right: 230px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    float: right;
+}
+#grammer x{
+    font-size: 40px;
+    font-family: amiri;
+}
+#grammer img{
+    float: right;
+    margin-left: 10px;
+}
+.addbtngrammer{
+    width: 150px;
+    height: 45px;
+    background-color:teal;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-right: 210px;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+}
+/* admin options */
+.adminmain{
+    width: 100%;
+}
+.adminoptions{
+    width: 300px;
+    height: auto;
+    float: right;
+    background-color: teal;
+    margin-right:30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 20px; 
+}
+.gradebtn{
+    /* float: right; */
+    width: 200px;
+    height: auto;
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px;
+    font-weight: bold;
+    font-family: amiri;
+    border-radius: 15px;
+    background-color: rgb(228, 233, 240);
+}
+.adminoptions a{
+    text-decoration: none; 
+    float: right; 
+    font-size: 18px;
+    line-height: 35px;
+    font-family: amiri;
+    width: 188px; 
+    height: 30px; 
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px;
+    margin-right: 50px;
+    border-radius: 15px;
+    color: black;
+    background-color: rgb(228, 233, 240);
+}
+/* addmin add student form */
+#addstudent{
+    width: 800;
+    height: 300px;
+    text-align: right;
+    padding: 25px;
+    font-size: 25px;
+    background-color: whitesmoke;
+    line-height: 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    margin-right: 120px;
+    float: right;
+}
+#addstudent x{
+    font-size: 45px;
+    font-family: amiri;
+}
+.txt3{
+    width: 350px;
+    height: 30px;
+    float: left;
+    padding: 5px;
+}
+.stxt2{
+    width: 350px;
+    height: 30px;
+    text-align: right;
+    direction: rtl;
+    font-size: 25px;
+    float: left;
+}
+/* viewstudent form */
+#viewstudent{
+    width: 72%;
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    display: block;
+}
+.viewstudent{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(233, 227, 227);
+    float: right;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.viewstudent x{
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+.viewstudent x2{
+    float: left;
+    font-size: 20px;
+}
+/* viewgradefouradmin */
+#viewgradefouradmin{
+    width: 72%;
+    height: auto;
+    padding: 10px;
+    margin: 20px;
+    border: #f44336;
+    /* background-color: #f44336; */
+}
+#viewlessons{
+    display: none;
+}
+#viewlessons t{
+    font-size: 70px; 
+    font-family: amiri;
+    color: brown;
+}
+.vbtn{
+    width: 200px;
+    height: 45px;
+    font-size: 25px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: rgb(235, 206, 168);
+}
+.view{
+    width: 350px;
+    height:300px;
+    background-color: whitesmoke;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    float: right;
+    text-align: center;
+    
+}
+.view x{
+    font-size: 25px;
+    font-weight: bold;
+}
+.view video{
+    margin: 10px;    
+}
+#viewgrammers{
+    display: none;
+}
+#viewgrammers t{
+    font-size: 35px; 
+    font-family: amiri;
+    color: brown;
+}
+#viewexamples{
+    display: none;
+}
+#viewexamples t{
+    font-size: 35px; 
+    font-family: amiri;
+    color: brown;
+}
+.view2{
+    width: 350px;
+    height:auto;
+    background-color: cadetblue;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    float: right;
+    text-align: center;
+
+}
+.view2 x{
+    font-size: 25px;
+    color: blue; 
+    font-weight: bold;
+}
+.view2 a{
+    text-decoration: none;   
+}
+#viewexams{
+    display: none;
+}
+#viewexams t{
+    font-size: 35px; 
+    font-family: amiri;
+    color: brown;
+}
+#viewanswers{
+    display: none;
+}
+#viewanswers t{
+    font-size: 35px; 
+    font-family: amiri;
+    color: brown;
+}
+/* grammer choices */
+.gchoice{
+    width: 400px;
+    height: 250px;
+    background-color: whitesmoke;
+    margin: 20px;
+    float: right;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 30px;
+    font-family: amiri;
+    transition: all 0.3s ease;
+}
+.gchoice a{
+    text-decoration: none;
+    color: black;
+}
+.gchoice:hover{
+    transform: scale(1.2);
+}
+/* viewgrammer */
+#viewgrammer{
+    width: 45%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+#viewgrammerss{
+    display: none;
+}
+#viewgrammerss t{
+    font-size: 35px; 
+    font-family: amiri;
+    color: brown;
+}
+#viewexampless{
+    display: none;
+}
+#viewexampless t{
+    font-size: 35px; 
+    font-family: amiri;
+    color: brown;
+}
+.vvbtn{
+    width: 300px;
+    height: 45px;
+    font-size: 35px;
+    margin: 15px;
+    border-radius: 20px;
+    background-color: rgb(235, 206, 168);
+}
+/* view user lessons */
+.viewuser{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    padding: 25px;
+    margin: auto;
+    margin-top: 25px;
+}
+.viewuser x{
+    font-size: 65px;
+    font-weight: bold;
+    font-family: amiri;
+    line-height: 100px;
+}
+/* view user examples */
+.viewuser2{
+    width: 300px;
+    height: 100px;
+    background-color: teal;
+    text-align: center;
+    float: right;
+    margin: 40px;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+.viewuser2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.mainuser{
+    width: 100%;
+}
